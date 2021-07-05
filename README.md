@@ -6,7 +6,7 @@
   </p>
   <p align="center"><a href="https://undefinedcompany.com/create-zrc2/">undefinedcompany.com/create-zrc2/</a></p>
   
-  ![alt text](https://s6.gifyu.com/images/ezgif.com-gif-makere7cd08d3c0b6e423.gif)
+  ![alt text](https://s6.gifyu.com/images/ezgif-2-7b11f0813a18.gif)
 </p>
 
 
