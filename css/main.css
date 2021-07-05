@@ -40,7 +40,8 @@
 }
 
 body {
-    background-color: #1A1A1A;
+    background: rgb(26,26,26);
+    background: linear-gradient(59deg, rgba(26,26,26,1) 0%, rgba(3,43,20,1) 78%, rgba(26,26,26,1) 100%);
     padding: 100px;
     font-family: "Kontora";
     overflow-x: hidden;
