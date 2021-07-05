@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <title>
         ZRC-2 generator | undefinedcompany
     </title>
@@ -35,40 +36,40 @@
                 <li>Approving third party to spend a certain amount of tokens</li>
             </ul>
             <div id="links">
-                <a target="_blank" href="github.com"><img class="icon" src="img/github.svg"></a>
+                <a target="_blank" href="https://github.com/ArthurHoeke/ZRC2-token-creator"><img class="icon" src="img/github.svg"></a>
                 <a target="_blank" href="https://dev.zilliqa.com/docs/exchanges/exchange-managing-zrc2-tokens/"><img class="icon" src="img/docs.svg"></a>
             </div>
         </section>
         <section id="setup">
             <img src="img/eclipse.png" id="blob">
             <img src="img/zilpay_logo.svg" id="connect">
-            <form id="tokenForm" style="display: none;">
+            <form id="tokenForm" style="display: none;" onsubmit="return false;">
                 <h3>Set your token variables</h3>
                 <div>
                     <label>contract owner</label>
-                    <input type="text" placeholder="zil1v25at4s3eh9w34uqqhe3vdvfsvcwq6un3fupc2" style="width: 100%;">
+                    <input id="input_owner" type="text" placeholder="zil1v25at4s3eh9w34uqqhe3vdvfsvcwq6un3fupc2" required>
                 </div>
                 <div>
                     <div class="group">
                         <label>token name</label>
-                        <input type="text" placeholder="awesome token">
+                        <input id="input_name" type="text" placeholder="awesome token" required>
                     </div>
                     <div class="group">
                         <label>token ticker</label>
-                        <input type="text" placeholder="AT" maxlength="4">
+                        <input id="input_ticker" type="text" placeholder="AT" maxlength="4" required>
                     </div>
                 </div>
                 <div>
                     <div class="group">
                         <label>decimal count</label>
-                        <input type="number" placeholder="2">
+                        <input id="input_decimal" type="number" placeholder="2" required>
                     </div>
                     <div class="group">
                         <label>intial supply</label>
-                        <input type="number" placeholder="100">
+                        <input id="input_supply" type="number" placeholder="100" required>
                     </div>
                 </div>
-                <input type="submit" value="DEPLOY CONTRACT">
+                <input id="deployContract" type="submit" value="DEPLOY CONTRACT">
             </form>
         </section>
     </main>

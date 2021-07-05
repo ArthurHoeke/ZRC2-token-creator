@@ -43,7 +43,7 @@ body {
     background-color: #1A1A1A;
     padding: 100px;
     font-family: "Kontora";
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 b {
@@ -157,6 +157,10 @@ main form > div:first-of-type {
     display: flex;
     flex-direction: column;
     align-items: baseline;
+}
+
+main form #input_owner {
+    width: 100%;
 }
 
 main form > div:first-of-type input {
