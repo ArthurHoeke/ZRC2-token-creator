@@ -6,6 +6,7 @@
   <img src="https://s6.gifyu.com/images/ezgif-2-7b11f0813a18.gif">
   </p>
   <p align="center"><a href="https://undefinedcompany.com/create-zrc2/">undefinedcompany.com/create-zrc2/</a></p>
+  <p align="center"><a href="https://arthurhoeke.github.io/ZRC2-token-creator/">arthurhoeke.github.io/ZRC2-token-creator/</a></p>
 </p>
 
 
