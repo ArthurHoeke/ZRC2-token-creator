@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        ZRC-2 generator | undefinedcompany
+    </title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="https://undefinedcompany.com"><h1>undefinedcompany</h1></a>
+    </nav>
+    <main>
+        <section id="introduction">
+            <h2>Create <b>ZRC-2</b></br>token</h2>
+            <p>ZRC-2 is the formal standard for Fungible Token in Zilliqa. It is an open standard for creating currencies on the Zilliqa blockchain.</p>
+            <p>The ZRC-2 standard allows for functionalities like</p>
+            <ul>
+                <li>Minting/burning tokens</li>
+                <li>Transferring tokens from one account to another</li>
+                <li>Querying account token balance</li>
+                <li>Querying total token balances</li>
+                <li>Approving third party to spend a certain amount of tokens</li>
+            </ul>
+            <div id="links">
+                <a target="_blank" href="github.com"><img class="icon" src="img/github.svg"></a>
+                <a target="_blank" href="https://dev.zilliqa.com/docs/exchanges/exchange-managing-zrc2-tokens/"><img class="icon" src="img/docs.svg"></a>
+            </div>
+        </section>
+        <section id="setup">
+            <img src="img/eclipse.png" id="blob">
+            <img src="img/zilpay_logo.svg" id="connect">
+            <form id="tokenForm" style="display: none;">
+                <h3>Set your token variables</h3>
+                <div>
+                    <label>contract owner</label>
+                    <input type="text" placeholder="zil1v25at4s3eh9w34uqqhe3vdvfsvcwq6un3fupc2" style="width: 100%;">
+                </div>
+                <div>
+                    <div class="group">
+                        <label>token name</label>
+                        <input type="text" placeholder="awesome token">
+                    </div>
+                    <div class="group">
+                        <label>token ticker</label>
+                        <input type="text" placeholder="AT" maxlength="4">
+                    </div>
+                </div>
+                <div>
+                    <div class="group">
+                        <label>decimal count</label>
+                        <input type="number" placeholder="2">
+                    </div>
+                    <div class="group">
+                        <label>intial supply</label>
+                        <input type="number" placeholder="100">
+                    </div>
+                </div>
+                <input type="submit" value="DEPLOY CONTRACT">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

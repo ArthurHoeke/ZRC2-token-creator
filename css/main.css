@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "Inter";
+    src: url('../fonts/Inter-Regular.woff');
+}
+
+@font-face {
+    font-family: "Kontora";
+    src: url('../fonts/Kontora Black.otf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Kontora";
+    src: url('../fonts/Kontora Bold.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Kontora";
+    src: url('../fonts/Kontora Light.otf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Kontora";
+    src: url('../fonts/Kontora Medium.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Kontora";
+    src: url('../fonts/Kontora Regular.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Kontora";
+    src: url('../fonts/Kontora SemiBold.otf');
+    font-weight: 600;
+}
+
+body {
+    background-color: #1A1A1A;
+    padding: 100px;
+    font-family: "Kontora";
+    overflow: hidden;
+}
+
+b {
+    font-weight: 600;
+}
+
+nav {
+    color: white;
+}
+
+nav h1 {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Inter';
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+main section {
+    width: 50%;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main #introduction #links {
+    margin-top: 15px;
+}
+
+main #introduction #links .icon {
+    width: 30px;
+    margin-top: 15px;
+}
+
+main #introduction #links a {
+    margin-right: 5px;
+}
+
+main #introduction h2 {
+    color: white;
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+
+main #introduction p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #D4D4D4;
+    max-width: 500px;
+    margin-bottom: 25px;
+}
+
+main #introduction {
+    margin-top: 85px;
+    justify-content: inherit;
+}
+
+main #introduction li {
+    color: #D4D4D4;
+    list-style: circle;
+    margin-left: 45px;
+}
+
+main #introduction li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+main section #blob {
+    animation: blob ease infinite alternate 120s;
+    position: absolute;
+    width: 150%;
+    transition: 3s ease;
+    transition-delay: .25s;
+}
+
+main section #connect {
+    width: 90%;
+    position: absolute;
+    cursor: pointer;
+}
+
+main #setup {
+    align-items: center;
+}
+
+main form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 85px;
+}
+
+main form>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main form > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+main form > div:first-of-type input {
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+main form input {
+    border: 2px solid #67776F;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-family: 'Kontora';
+    font-size: 1rem;
+    color: #d8d8d8;
+}
+
+main form input[type=submit] {
+    background-color: rgba(255, 255, 255, .15);
+    border: none;
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 7px;
+}
+
+main form > div {
+    margin-bottom: 50px;
+}
+
+main form input:focus {
+    color: #d8d8d8;
+    outline: none;
+}
+
+main form h3 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+main form .group {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+main form label {
+    color: #d8d8d8;
+    margin-bottom: 5px;
+}
+
+@keyframes blob {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        opacity: .6;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: .8;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        overflow-y: scroll;
+        padding: 25px;
+    }
+
+    main #introduction h2 {
+        font-size: 4rem;
+    }
+
+    main section {
+        width: 100%;
+        height: 100%;
+    }
+
+    main #setup {
+        margin-top: 250px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
