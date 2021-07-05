@@ -3,8 +3,8 @@
 
   <p align="center">
     ZRC-2 token creator is a free open-source tool which allows users to create tokens on the Zilliqa blockchain.
-  <a href="https://undefinedcompany.com/create-zrc2/">undefinedcompany.com/create-zrc2/</a>
   </p>
+  <a href="https://undefinedcompany.com/create-zrc2/">undefinedcompany.com/create-zrc2/</a>
   
   ![alt text](https://s6.gifyu.com/images/6c99af25b33c8b19003f964f9c0b04cb.gif)
 </p>
