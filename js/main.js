@@ -232,6 +232,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 function deployContract(owner, name, symbol, decimal, supply) {
+    let supplyDecimals = "";
+
+    for(let i = 0; i < supply; i++) {
+      supplyDecimals += "0";
+    }
+
+    supplyDecimals = supply.toString() + supplyDecimals;
+
     const init = [
         {
             "vname": "contract_owner",
@@ -256,7 +264,7 @@ function deployContract(owner, name, symbol, decimal, supply) {
         {
             "vname": "init_supply",
             "type": "Uint128",
-            "value": supply
+            "value": supplyDecimals
         },
         {
             "vname": "_scilla_version",
