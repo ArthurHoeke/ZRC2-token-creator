@@ -205,9 +205,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     let crypto = null;
 
     //check for connect button click
-    connectButton.addEventListener('click', function () {
+    connectButton.addEventListener('click', function() {
         if (typeof window.zilPay !== 'undefined') {
-            return zilPay.wallet.connect().then(function (accounts) {
+            return zilPay.wallet.connect().then(function(accounts) {
                 zilliqa = window.zilPay;
                 crypto = zilPay.crypto;
 
@@ -220,7 +220,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 
-    deployButton.addEventListener('click', function () {
+    deployButton.addEventListener('click', function() {
         const input_owner = document.getElementById("input_owner").value;
         const input_name = document.getElementById("input_name").value;
         const input_symbol = document.getElementById("input_ticker").value;
@@ -234,14 +234,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
 function deployContract(owner, name, symbol, decimal, supply) {
     let supplyDecimals = "";
 
-    for(let i = 0; i < supply; i++) {
-      supplyDecimals += "0";
+    for (let i = 0; i < decimal; i++) {
+        supplyDecimals += "0";
     }
 
     supplyDecimals = supply.toString() + supplyDecimals;
 
-    const init = [
-        {
+    const init = [{
             "vname": "contract_owner",
             "type": "ByStr20",
             "value": window.zilPay.crypto.fromBech32Address(owner)
@@ -280,8 +279,8 @@ function deployContract(owner, name, symbol, decimal, supply) {
 
     // Sending to TX
     contract.deploy({
-        gasLimit: '25000',
-        gasPrice: '1000000000'
-    })
+            gasLimit: '25000',
+            gasPrice: '1000000000'
+        })
         .then(([tx, contract]) => window.open("https://viewblock.io/zilliqa/tx/" + tx.TranID));
 }
